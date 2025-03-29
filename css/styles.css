@@ -26,7 +26,6 @@ a, a:visited, a:hover, a:active {
   justify-content: flex-end;
   align-items: center;
   margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 .logo {
@@ -40,13 +39,14 @@ a, a:visited, a:hover, a:active {
 
 .signup:hover {
   color: #fff !important;
+  transform: scale(1.05);
 }
 
 .login {
   background: #fff;
   border-radius: 64px;
   padding: 16px 32px;
-  margin-right: 128px;
+  margin-right: 144px;
 }
 
 .login:hover {
@@ -62,8 +62,30 @@ a, a:visited, a:hover, a:active {
   font-weight: bold;
 }
 
+.hero {
+  display: flex;
+  height: 85vh;
+}
+
+.playlists {
+  width: 30%;
+  color: #fff;
+  background: #121212;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.playlists-text {
+  font-weight: bold;
+  margin: 24px;
+}
+
   .container {
-    height: 90vh;
     color: #fff;
     background: #121212;
     border-radius: 8px;
