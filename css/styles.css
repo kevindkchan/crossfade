@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .player {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #nowPlaying {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .controls {
+    margin: 10px 0;
+  }
+  
+  .controls button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin: 0 5px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .progress-container {
+    margin: 10px 0;
+  }
+  
+  #progressBar {
+    width: 80%;
+  }
+  
+  .volume-control {
+    margin: 10px 0;
+  }
+  
+  .volume-control input {
+    width: 150px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .crossfade-input {
+    margin: 10px 0;
+  }
+  
+  .crossfade-input input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  
