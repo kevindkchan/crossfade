@@ -1,17 +1,41 @@
 body {
-    font-family: sans-serif;
-    background: #111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  filter: brightness(100%);
+  filter: saturate(0%);
+  margin-left: 24px;
+}
+
+  .container {
     color: #fff;
+    background: #121212;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    overflow: auto;
+    margin: 8px;
   }
   
   .player {
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1000px;
+    margin-top: 64px;
   }
   
   #nowPlaying {
@@ -72,5 +96,12 @@ body {
     width: 60px;
     padding: 5px;
     font-size: 1rem;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 64px;
   }
   
