@@ -1,24 +1,69 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+/* navbar */
 
 .navbar {
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .logo {
-  filter: brightness(100%);
-  filter: saturate(0%);
+  filter: brightness(0) invert(1);
   margin-left: 24px;
 }
 
+.signup {
+  color: #ccc !important;
+}
+
+.signup:hover {
+  color: #fff !important;
+}
+
+.login {
+  background: #fff;
+  border-radius: 64px;
+  padding: 16px 32px;
+  margin-right: 128px;
+}
+
+.login:hover {
+  transform: scale(1.05);
+  background: #ccc;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: bold;
+}
+
   .container {
+    height: 90vh;
     color: #fff;
     background: #121212;
     border-radius: 8px;
@@ -26,8 +71,14 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     flex: 1;
-    overflow: auto;
+    overflow: hidden;
     margin: 8px;
+  }
+
+  .temp {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
   }
   
   .player {
@@ -104,4 +155,8 @@ body {
     margin-top: auto;
     margin-bottom: 64px;
   }
+
+.temp {
+  color: #fff;
+}
   

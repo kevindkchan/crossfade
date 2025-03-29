@@ -31,8 +31,8 @@ const playlist = [
       const crossfadeDiv = document.createElement('div');
       crossfadeDiv.className = 'crossfade-input';
       crossfadeDiv.innerHTML = `
-        <label>Crossfade before next (s): </label>
-        <input type="number" value="0" min="0" max="12" />
+        <label>Crossfade: </label>
+        <input type="number" value="12" min="0" max="12" />
       `;
       playlistEl.appendChild(crossfadeDiv);
       crossfadeInputs.push(crossfadeDiv.querySelector('input'));
