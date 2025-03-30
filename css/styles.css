@@ -8,7 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #000000;
-  font-family: sans-serif;
+  font-family: "Figtree", sans-serif;
 }
 
 a {
@@ -44,6 +44,7 @@ hr {
 
 .signup {
   color: #ccc !important;
+  font-size: 14px;
 }
 
 .signup:hover {
@@ -74,19 +75,24 @@ hr {
 .hero {
   display: flex;
   height: 85vh;
+  width: 100%;
 }
 
 .playlists {
   width: 30%;
+  min-width: 150px;
+  max-width: 80%;
   color: #fff;
   background: #121212;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1;
+  flex: none;
   overflow: hidden;
-  margin: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
 }
 
 .playlists-text {
@@ -94,16 +100,32 @@ hr {
   margin: 24px;
 }
 
+.resizer {
+  width: 1px;
+  background: #000;
+  cursor: grab;
+  user-select: none;
+  flex: none;
+  margin: 16px 4px;
+}
+
+.resizer:hover {
+  background: #555;
+}
+
   .container {
+    flex: 1;
+    min-width: 150px;
     color: #fff;
     background: #121212;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1;
     overflow: hidden;
-    margin: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
   }
 
   .temp {
@@ -191,6 +213,10 @@ hr {
     gap: 24px;
     color: rgba(255, 255, 255, 0.5);
   }
+
+.copyright {
+  font-size: 14px;
+}
 
 .temp {
   color: #fff;

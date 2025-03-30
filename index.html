@@ -6,6 +6,9 @@
   <title>Crossfade - Web Player: Crossfades for every track</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="navbar">
@@ -22,12 +25,13 @@
     </div>
   </div>
   <div class="hero">
-    <div class="playlists">
+    <div class="playlists" id="leftPanel">
       <div class="playlists-text">
         Playlists
       </div>
     </div>
-    <div class="container">
+    <div class="resizer" id="resizer"></div>
+    <div class="container" id="rightPanel">
       <div class="player">
         <div id="nowPlaying">Not playing yet</div>
         <div class="controls">
@@ -62,6 +66,7 @@
   <div class="temp">
     WORK IN PROGRESS, ABOVE IS A DEMO.
   </div>
-  <script src="script.js"></script>
+  <script src="js/crossfade.js"></script>
+  <script src="js/resizer.js"></script>
 </body>
 </html>

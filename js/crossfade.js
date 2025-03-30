@@ -78,6 +78,7 @@ const playlist = [
     }
   });
 
+  // Stop button
   stopBtn.addEventListener('click', () => {
     const currentAudio = isAudio1Playing ? audio1 : audio2;
     currentAudio.pause();
