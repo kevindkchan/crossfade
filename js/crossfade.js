@@ -20,12 +20,16 @@ const playlist = [
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
   const stopBtn = document.getElementById('stopBtn');
+
+  const trackElements = [];
   
   // Generate UI for playlist and crossfade inputs
+
   playlist.forEach((song, i) => {
     const li = document.createElement('li');
-    li.textContent = `${i + 1}. ${song}`;
+    li.textContent = `${song}`;
     playlistEl.appendChild(li);
+    trackElements.push(li);
   
     if (i < playlist.length - 1) {
       const crossfadeDiv = document.createElement('div');
@@ -95,6 +99,10 @@ const playlist = [
     currentAudio.src = playlist[index];
     currentAudio.volume = parseFloat(volumeSlider.value);
     currentAudio.play();
+    trackElements.forEach(el => el.classList.remove('active'));
+    if (trackElements[index]) {
+      trackElements[index].classList.add('active');
+    }
     nowPlayingEl.textContent = `Now Playing: ${playlist[index]}`;
     isPlaying = true;
   

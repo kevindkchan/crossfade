@@ -11,43 +11,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="navbar">
-    <a href="">
-      <img class="logo" src="img/crossfade.png" width="40" height="40">
-    </a>
-    <div class="right">
-      <a class="signup" href="">
-        About
-      </a>
-      <a class="login" href="">
-        Soon
-      </a>
-    </div>
-  </div>
   <div class="hero">
-    <div class="playlists" id="leftPanel">
-      <div class="playlists-text">
-        Playlists
-      </div>
-    </div>
-    <div class="resizer" id="resizer"></div>
     <div class="container" id="rightPanel">
       <div class="player">
-        <div id="nowPlaying">Not playing yet</div>
-        <div class="controls">
+        <ul id="playlist"></ul>
+        <div class="control-bar">
+
+          <div class="left">
+            <div id="nowPlaying">Not playing yet</div>
+          </div>
+
+          <div class="controls">
             <button id="prevBtn">Prev</button>
+            <button id="startBtn">Play</button>
             <button id="stopBtn">Stop</button>
             <button id="nextBtn">Next</button>
           </div>
+
+          <div class="right">
+            <div class="volume-control">
+              <label for="volumeSlider">Volume:</label>
+              <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" />
+            </div>
+          </div>
+
+        </div>
         <div class="progress-container">
           <input type="range" id="progressBar" value="0" min="0" max="100" />
         </div>
-        <div class="volume-control">
-          <label for="volumeSlider">Volume:</label>
-          <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" />
-        </div>
-        <ul id="playlist"></ul>
-        <button id="startBtn">Play</button>
       </div>
       <div class="footer">
         <hr>
@@ -55,10 +46,7 @@
           © 2025 Crossfade, because spotify didn't.
         </div>
         <a href="https://community.spotify.com/t5/Ideas/ct-p/newideas?ideaSearch=crossfade" target="_blank" rel="noopener noreferrer">
-          <u>Here's a list of people that also suggested this idea</u>
-        </a>
-        <a href="https://community.spotify.com/t5/Live-Ideas/In-Playlists-allow-indivual-mixing-of-tracks-rather-than-one/idi-p/6753546" target="_blank" rel="noopener noreferrer">
-          <u>This especially</u>
+          <u>list of people that also suggested this idea</u>
         </a>
       </div>
     </div>
@@ -67,6 +55,6 @@
     WORK IN PROGRESS, ABOVE IS A DEMO.
   </div>
   <script src="js/crossfade.js"></script>
-  <script src="js/resizer.js"></script>
+  <script src="js/progressbar.js"></script>
 </body>
 </html>
